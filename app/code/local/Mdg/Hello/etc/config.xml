@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<config>
+		<modules>
+			<Mdg_Hello>
+				<version>0.1.0</version>
+			</Mdg_Hello>
+		</modules>
+		<frontend>
+			<routers>
+				<mdg_hello>
+					<use>standard</use>
+					<args>
+						<module>Mdg_Hello</module>
+						<frontName>hello</frontName>
+					</args>
+				</mdg_hello>
+			</routers>
+		</frontend>
+	</config>

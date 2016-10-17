@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Makgsoewar_Mytest>
+			<active>
+				true
+			</active>
+			<codePool>local</codePool>
+		</Makgsoewar_Mytest>
+	</modules>
+</config>

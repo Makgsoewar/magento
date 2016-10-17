@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Mdg_Hello>
+			<active>
+				true
+			</active>
+			<codePool>local</codePool>
+		</Mdg_Hello>
+	</modules>
+</config>

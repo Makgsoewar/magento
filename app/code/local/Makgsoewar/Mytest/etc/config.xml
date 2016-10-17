@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Makgsoewar_Mytest>
+            <version>0.1.0</version>    <!-- Version number of your module -->
+        </Makgsoewar_Mytest>
+    </modules>
+    <frontend>
+        <routers>
+            <mymodule>
+                <use>standard</use>
+                <args>
+                    <module>Makgsoewar_Mytest</module>
+                    <frontName>mytest</frontName>
+                </args>
+            </mymodule>
+        </routers>
+    </frontend>
+</config>
