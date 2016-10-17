@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <config>
 	<modules>
 		<Mdg_Giftregistry>
@@ -7,20 +7,21 @@
 	</modules>
 	<global>
 		<models>
-			<mgd_giftregistry>
-				<class>Mgd_Giftregistry_Model</class>
-			</mgd_giftregistry>
+			<mdg_giftregistry>
+				<class>Mdg_Giftregistry_Model</class>
+			</mdg_giftregistry>
 		</models>
 		<blocks>
 			<mdg_giftregistry>
-				<class>Mgd_Giftregistry_Block</class>
+				<class>Mdg_Giftregistry_Block</class>
 			</mdg_giftregistry>
 		</blocks>
 		<helpers>
 			<mdg_giftregistry>
-				<class>Mgd_Giftregistry_Helper</class>
+				<class>Mdg_Giftregistry_Helper</class>
 			</mdg_giftregistry>
 		</helpers>
+
 		<resources>
 			<mdg_giftregistry_setup>
 				<setup>
