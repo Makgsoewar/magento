@@ -4,6 +4,7 @@ class Envato_Custompaymentmethod_Model_Paymentmethod extends Mage_Payment_Model_
   protected $_code  = 'custompaymentmethod';
   protected $_formBlockType = 'custompaymentmethod/form_custompaymentmethod';
   protected $_infoBlockType = 'custompaymentmethod/info_custompaymentmethod';
+  // public $errorMsg = null;
  
   public function assignData($data)
   {
@@ -19,7 +20,7 @@ class Envato_Custompaymentmethod_Model_Paymentmethod extends Mage_Payment_Model_
       $info->setCustomFieldTwo($data->getCustomFieldTwo());
     }
  
-    return $this;
+    echo $this;
   }
  
   public function validate()
@@ -27,17 +28,17 @@ class Envato_Custompaymentmethod_Model_Paymentmethod extends Mage_Payment_Model_
     parent::validate();
     $info = $this->getInfoInstance();
      
-    if (!$info->getCustomFieldOne())
-    {
-      $errorCode = 'invalid_data';
-      $errorMsg = $this->_getHelper()->__("CustomFieldOne is a required field.\n");
-    }
+    // if (!$info->getCustomFieldOne())
+    // {
+    //   $errorCode = 'invalid_data';
+    //   $errorMsg = $this->_getHelper()->__("CustomFieldOne is a required field.\n");
+    // }
      
-    if (!$info->getCustomFieldTwo())
-    {
-      $errorCode = 'invalid_data';
-      $errorMsg .= $this->_getHelper()->__('CustomFieldTwo is a required field.');
-    }
+    // if (!$info->getCustomFieldTwo())
+    // {
+    //   $errorCode = 'invalid_data';
+    //   $errorMsg .= $this->_getHelper()->__('CustomFieldTwo is a required field.');
+    // }
  
     if ($errorMsg) 
     {
@@ -50,5 +51,6 @@ class Envato_Custompaymentmethod_Model_Paymentmethod extends Mage_Payment_Model_
   public function getOrderPlaceRedirectUrl()
   {
     return Mage::getUrl('custompaymentmethod/payment/redirect', array('_secure' => false));
+
   }
 }

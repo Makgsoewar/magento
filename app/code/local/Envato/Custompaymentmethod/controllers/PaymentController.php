@@ -8,7 +8,7 @@ class Envato_Custompaymentmethod_PaymentController extends Mage_Core_Controller_
     {
       $arr_querystring = array(
         'flag' => 1, 
-        'orderId' => $this->getRequest()->get("orderId")
+        'orderId' => $this->getRequest()->get("orderId"),
       );
        
       Mage_Core_Controller_Varien_Action::_redirect('custompaymentmethod/payment/response', array('_secure' => false, '_query'=> $arr_querystring));
@@ -21,7 +21,7 @@ class Envato_Custompaymentmethod_PaymentController extends Mage_Core_Controller_
     $block = $this->getLayout()->createBlock('Mage_Core_Block_Template','custompaymentmethod',array('template' => 'custompaymentmethod/redirect.phtml'));
     $this->getLayout()->getBlock('content')->append($block);
     $this->renderLayout();
-  }
+ }
  
   public function responseAction() 
   {
