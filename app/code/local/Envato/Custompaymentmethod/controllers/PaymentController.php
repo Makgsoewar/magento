@@ -4,6 +4,7 @@ class Envato_Custompaymentmethod_PaymentController extends Mage_Core_Controller_
 {
   public function gatewayAction() 
   {
+    var_dump(Mage::helper('custompaymentmethod')->getPaymentGatewayUrl());
     if ($this->getRequest()->get("orderId"))
     {
       $arr_querystring = array(
