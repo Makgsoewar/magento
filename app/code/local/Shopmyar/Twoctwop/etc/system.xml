@@ -3,8 +3,8 @@
   <sections>
     <payment>
       <groups>
-        <custompaymentmethod translate="label" module="custompaymentmethod">
-          <label>CustomPaymentMethod Module</label>
+        <twoctwop translate="label" module="twoctwop">
+          <label>2C2P Payment</label>
           <sort_order>1000</sort_order>
           <show_in_default>1</show_in_default>
           <show_in_website>1</show_in_website>
@@ -55,7 +55,7 @@
               <sort_order>5</sort_order>
             </specificcountry>
           </fields>
-        </custompaymentmethod>
+        </twoctwop>
       </groups>
     </payment>
   </sections>

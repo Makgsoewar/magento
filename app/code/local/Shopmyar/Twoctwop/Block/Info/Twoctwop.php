@@ -1,6 +1,6 @@
 <?php
 // app/code/local/Envato/Custompaymentmethod/Block/Info/Custompaymentmethod.php
-class Envato_Custompaymentmethod_Block_Info_Custompaymentmethod extends Mage_Payment_Block_Info
+class Shopmyar_Twoctwop_Block_Info_Twoctwop extends Mage_Payment_Block_Info
 {
   protected function _prepareSpecificInformation($transport = null)
   {

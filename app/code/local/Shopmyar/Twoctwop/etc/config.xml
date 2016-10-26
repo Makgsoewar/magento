@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
   <modules>
-    <Envato_Custompaymentmethod>
+    <Shopmyar_Twoctwop>
       <version>1.0.0.0</version>
-    </Envato_Custompaymentmethod>
+    </Shopmyar_Twoctwop>
   </modules>
  
   <global>
@@ -19,54 +19,54 @@
     </fieldsets>
      
     <helpers>
-      <custompaymentmethod>
-        <class>Envato_Custompaymentmethod_Helper</class>
-      </custompaymentmethod>
+      <twoctwop>
+        <class>Shopmyar_Twoctwop_Helper</class>
+      </twoctwop>
     </helpers>
  
     <blocks>
-      <custompaymentmethod>
-        <class>Envato_Custompaymentmethod_Block</class>
-      </custompaymentmethod>
+      <twoctwop>
+        <class>Shopmyar_Twoctwop_Block</class>
+      </twoctwop>
     </blocks>
          
     <models>
-      <custompaymentmethod>
-        <class>Envato_Custompaymentmethod_Model</class>
-      </custompaymentmethod>
+      <twoctwop>
+        <class>Shopmyar_Twoctwop_Model</class>
+      </twoctwop>
     </models>
  
     <resources>
-      <custompaymentmethod_setup>
+      <twoctwop_setup>
         <setup>
-          <module>Envato_Custompaymentmethod</module>
+          <module>Shopmyar_Twoctwop</module>
         </setup>
-      </custompaymentmethod_setup>
+      </twoctwop_setup>
     </resources>
   </global>
  
   <default>
     <payment>
-      <custompaymentmethod>
+      <twoctwop>
         <active>1</active>
-        <model>custompaymentmethod/paymentmethod</model>
+        <model>twoctwop/paymentmethod</model>
         <order_status>pending</order_status>
-        <title>CustomPaymentMethod</title>
+        <title>2C2P Payment</title>
         <allowspecific>0</allowspecific>
         <payment_action>sale</payment_action>
-      </custompaymentmethod>
+      </twoctwop>
     </payment>
   </default>
    
   <frontend>
     <routers>
-      <custompaymentmethod>
+      <twoctwop>
         <use>standard</use>
         <args>
-          <module>Envato_Custompaymentmethod</module>
-          <frontName>custompaymentmethod</frontName>
+          <module>Shopmyar_Twoctwop</module>
+          <frontName>twoctwop</frontName>
         </args>
-      </custompaymentmethod>
+      </twoctwop>
     </routers>
   </frontend>
 </config>

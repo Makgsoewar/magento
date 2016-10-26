@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <config>
   <modules>
-    <Envato_Custompaymentmethod>
+    <Shopmyar_Twoctwop>
       <active>true</active>
       <codePool>local</codePool>
        
       <depends>
-        <Mage_Payment />
+        <Mage_Payment/>
       </depends>
-    </Envato_Custompaymentmethod>
+    </Shopmyar_Twoctwop>
   </modules>
 </config>
