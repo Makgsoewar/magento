@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <models>
+            <makgsoewar>
+                <class>Makgsoewar_CMS_Model</class>
+            </makgsoewar>
+        </models>
+        <events>
+            <adminhtml_cms_page_edit_tab_content_prepare_form>
+                <observers>
+                    <makgsoewar_page_edit_tab_content>
+                        <type>singleton</type>
+                        <class>Makgsoewar_CMS_Model_Observer</class>
+                        <method>cmsField</method>
+                    </makgsoewar_page_edit_tab_content>
+                </observers>
+            </adminhtml_cms_page_edit_tab_content_prepare_form>
+        </events>
+        <page>
+            <layouts>
+                <makgsoewar_custom_page>
+                    <label>Makgsoewar Custom Page</label>
+                    <template>page/makgsoewar-page.phtml</template>
+                </makgsoewar_custom_page>
+            </layouts>
+        </page>
+    </global>
+</config>

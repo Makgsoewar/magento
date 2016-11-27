@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Makgsoewar_CMS>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Makgsoewar_CMS>
+    </modules>
+</config>
