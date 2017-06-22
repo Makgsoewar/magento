@@ -437,8 +437,8 @@ class Mage_Adminhtml_Block_Dashboard_Graph extends Mage_Adminhtml_Block_Dashboar
         //echo $this->getHtmlId();
         if($this->getHtmlId() == 'amounts'){
             $return = array();
-            $return[value] = $this->getAllSeries();
-            $return[chart] = $customize_;
+            $return['value'] = $this->getAllSeries();
+            $return['chart'] = $customize_;
             return $return;
         }else{
             // return the encoded data
